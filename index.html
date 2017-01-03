@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="app.js"></script>
+<style>
+body { color: white; background-color: black; }
+
+</style>
+  </head>
+  <body>
+
+
+    <video id="vid" controls>
+      <source src="NAPOLEON_DYNAMITE_4X3.m4v">
+    </video>
+
+    <div>
+      <input id="looping" type="checkbox" onclick="toggle_loop()">Loop</input>
+      <button onclick="scrub_loop_back()">&lt;</button>
+      <button onclick="scrub_loop_forward()">&gt;</button>
+      <label>Delta: <input id="delta_input" type=text" value="0.1"/></label>
+      <button onclick="spin_delta_down()">-</button>
+      <button onclick="spin_delta_up()">+</button>
+      <label>Duration: <input id="duration_input" type=text" value="3"/></label>
+      <button onclick="spin_duration_down()">-</button>
+      <button onclick="spin_duration_up()">+</button>
+    </div>
+    <div>
+      <label>Tags: <input id="tags_input" type=text" value=""/></label>
+      <button onclick="capture()">Capture</button>
+    </div>
+
+  </body>
+</html>
